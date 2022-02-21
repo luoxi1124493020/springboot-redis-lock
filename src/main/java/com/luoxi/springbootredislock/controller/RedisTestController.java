@@ -23,6 +23,7 @@ public class RedisTestController {
         redisTemplate.opsForValue().set("spring","h1");
         System.out.println("redis get success");
         System.out.println("its fine");
+        System.out.println("this is hot fix ");
         String spring = (String) redisTemplate.opsForValue().get("spring");
         return spring;
     }
